@@ -778,6 +778,9 @@ form input:last-child {
   .my-work .projects :nth-child(8) {
     transition-delay: 4.5s;
   }
+  .my-work .projects :nth-child(9) {
+    transition-delay: 5s;
+  }
   .contact div {
     transition: 1s;
     -webkit-transition: 1s;
