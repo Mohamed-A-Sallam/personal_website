@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahona, Arial;
+}
+.container {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+.container .head {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.container .head span {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.container .box {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .container {
+    height: 550px;
+  }
+  .container .box {
+  display: flex;
+  flex-direction: column;
+}
+}
+.container .box .hang-man {
+  position: relative;
+  flex: 1;
+}
+.container .box .hang-man .stand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 0;
+  width: 100px;
+  height: 4px;
+  background-color: #222;
+  display: none;
+}
+.container .box .hang-man .stick {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  bottom: 4px;
+  height: 190px;
+  width: 4px;
+  background-color: #222;
+  display: none;
+}
+.container .box .hang-man .line {
+  position: absolute;
+  left: 50%;
+  bottom: 165px;
+  width: 80px;
+  height: 4px;
+  background-color: #222;
+  display: none;
+}
+.container .box .hang-man .line::after {
+  content: "";
+  width: 4px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  background-color: #222;
+}
+.container .box .hang-man .line::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -17px;
+  bottom: -64px;
+  border: 4px dashed #222;
+  border-radius: 50%;
+}
+.container .box .hang-man .body {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: calc(50% + 65.5px);
+  border: 2px solid #222;
+  border-radius: 50%;
+  bottom: 107px;
+  display: none;
+}
+.container .box .hang-man .body::after {
+  content: "";
+  width: 2px;
+  height: 60px;
+  background-color: #222;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  margin-left: -1px;
+}
+.container .box .hang-man .hands {
+  position: absolute;
+  left: calc(50% + 63px);
+  bottom: 80px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #222;
+  border-left: 2px solid #222;
+  transform: rotate(-45deg);
+  display: none;
+}
+.container .box .hang-man .legs {
+  position: absolute;
+  left: calc(50% + 63px);
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #222;
+  border-right: 2px solid #222;
+  transform: rotate(-45deg);
+  display: none;
+}
+.container .box .letters {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+.container .box .letters span {
+  color: #fff;
+  width: 50px;
+  background-color: #009788;
+  padding: 5px;
+  margin: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.category span {
+  color: #e91e63;
+}
+.clicked {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.spaces {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.spaces span {
+  border-bottom: 4px solid #222;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.spaces .space-val {
+  border: none;
+}
+.space-val::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #222;
+}
+.spaces span:not(:last-child) {
+  margin-right: 5px;
+}
+.finish {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 400px;
+  height: 200px;
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  transition: 0.5s;
+  font-size: 22px;
+}
+.finish span {
+  color: #e91e63;
+  font-weight: bold;
+}

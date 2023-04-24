@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is JS ?",
+    "answer_1": "Lipstick",
+    "answer_2": "Pen",
+    "answer_3": "Hair-cut",
+    "answer_4": "Programming-language",
+    "correct": "Programming-language"
+  },
+  {
+    "question": "The full name of JS is ?",
+    "answer_1": "Jason-Statham",
+    "answer_2": "Juicy-Soup",
+    "answer_3": "Jennifer-Smith",
+    "answer_4": "Java-Script",
+    "correct": "Java-Script"
+  },
+  {
+    "question": "The JS is singl-threaded language ?",
+    "answer_1": "Yes",
+    "answer_2": "No",
+    "answer_3": "both",
+    "answer_4": "none",
+    "correct": "Yes"
+  },
+  {
+    "question": "What does singl-threade mean ?",
+    "answer_1": "to deal with one operation",
+    "answer_2": "to deal with multipul operations",
+    "answer_3": "an oop feature",
+    "answer_4": "json syntax",
+    "correct": "to deal with one operation"
+  },
+  {
+    "question": "What is API ?",
+    "answer_1": "application programming interface",
+    "answer_2": "banana",
+    "answer_3": "cow",
+    "answer_4": "an anime serios",
+    "correct": "application programming interface"
+  },
+  {
+    "question": "What is JSON ?",
+    "answer_1": "actor",
+    "answer_2": "player",
+    "answer_3": "recieve & send data",
+    "answer_4": "Programming-language",
+    "correct": "recieve & send data"
+  },
+  {
+    "question": "What is Ajax ?",
+    "answer_1": "aproach",
+    "answer_2": "second virsion of json",
+    "answer_3": "rocket",
+    "answer_4": "country",
+    "correct": "aproach"
+  },
+  {
+    "question": "Do Promise & Fetch do the same job ?",
+    "answer_1": "Yes",
+    "answer_2": "No",
+    "answer_3": "both",
+    "answer_4": "half-yes",
+    "correct": "half-yes"
+  },
+  {
+    "question": "What is DOM ?",
+    "answer_1": "Document Object Model",
+    "answer_2": "bla",
+    "answer_3": "bla",
+    "answer_4": "bla bla bla",
+    "correct": "Document Object Model"
+  },
+  {
+    "question": "What is BOM ?",
+    "answer_1": "diddly-squat",
+    "answer_2": "Browser Object Model",
+    "answer_3": "song",
+    "answer_4": "onion",
+    "correct": "Browser Object Model"
+  }
+]

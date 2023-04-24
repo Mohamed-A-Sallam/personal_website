@@ -1,0 +1,233 @@
+:root {
+    --mainColor: #10cab7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+header .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container img {
+    width: 60px;
+}
+
+header .container .links {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+header .container .links::after,
+header .container .links::before,
+header .container .links>div {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    background-color: #000;
+}
+
+header .container .links::before {
+    top: 0;
+}
+
+header .container .links::after {
+    bottom: 0;
+}
+
+header .container .links>div {
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+header .container .links:hover>div {
+    width: 100%;
+}
+
+header .container .links ul {
+    width: 200px;
+    background-color: #f6f6f6;
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    z-index: 1000;
+}
+
+header .container .links:hover ul {
+    display: block;
+}
+
+header .container .links ul::after {
+    content: "";
+    border: solid 10px;
+    border-color: transparent transparent #f6f6f6;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+header .container .links ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+header .container .links ul li a:hover {
+    padding-left: 25px;
+}
+
+header .container .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+section .landing {
+    height: 100vh;
+    background-image: url(../images/temp_one/landing.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .landing h1 {
+    color: var(--mainColor);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+section .landing p {
+    line-height: 1.8;
+    font-size: 19.5px;
+}
+
+.el-padding {
+    padding: 60px 0;
+}
+
+.grid-style {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.features .container>div {
+    padding: 20px;
+}
+
+.features .container>div i {
+    color: var(--mainColor);
+}
+
+.features .container>div h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.features .container > div p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+.el-padding .heading {
+    margin-bottom: 100px;
+}
+.el-padding .main-h {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+}
+
+.el-padding .main-p {
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+    position: relative;
+    top: -35px;
+    z-index: 3;
+}
+@media (min-width: 768px) {
+    .services .grid-style .serv  {
+        display: flex;
+        text-align: left;
+    }
+    .services .grid-style .serv div:first-child {
+        margin-right: 20px;
+    }
+}
+.services .grid-style .serv div:first-child {
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+.services .grid-style .serv div:last-child h3 {
+    margin-bottom: 20px;
+}
+.services .grid-style .serv div:last-child p {
+    line-height: 1.8;
+    color: #444;
+    font-weight: 300;
+}
